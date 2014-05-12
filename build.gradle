@@ -1,0 +1,34 @@
+apply plugin: 'android'
+apply plugin: 'maven'
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:0.9.+'
+	}
+}
+
+repositories {
+	mavenLocal()
+}
+
+dependencies {
+    compile 'net.ut11.ccmp:ccmp-lib:1.1.0-SNAPSHOT'
+    compile 'com.android.support:appcompat-v7:+'
+}
+
+
+android {
+	compileSdkVersion 19
+	buildToolsVersion "19.0.3"
+
+	defaultConfig {
+		minSdkVersion 10
+		targetSdkVersion 19
+
+		versionName '1.0-SNAPSHOT'
+		versionCode 1
+	}
+}
