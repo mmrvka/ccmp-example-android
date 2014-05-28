@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compile 'net.ut11.ccmp:ccmp-lib:1.1.0-SNAPSHOT'
+    compile 'net.ut11.ccmp:ccmp-lib:1.1.1-SNAPSHOT'
     compile 'com.android.support:appcompat-v7:+'
 }
 
